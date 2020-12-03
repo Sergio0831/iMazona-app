@@ -1,0 +1,15 @@
+header {
+  grid-area: header;
+  background: var(--bgColor);
+}
+
+header a {
+  color: var(--white);
+  padding: 1rem;
+}
+
+a.brand {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bold;
+}

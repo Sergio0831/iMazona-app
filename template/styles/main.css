@@ -1,0 +1,15 @@
+@import "_base.css";
+@import "_header.css";
+@import "_card.css";
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem;
+  background: var(--bgColor);
+  color: var(--white);
+}

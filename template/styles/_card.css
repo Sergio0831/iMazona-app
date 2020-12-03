@@ -1,0 +1,32 @@
+.card {
+  border: 0.1rem var(--grey) solid;
+  border-radius: 0.5rem;
+  background: var(--light-grey);
+  margin: 1rem;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.card__body > * {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+img.medium {
+  max-width: 29rem;
+  width: 100%;
+}
+
+.rating span {
+  color: var(--gold);
+  margin: 0.1rem;
+}
+
+.price {
+  font-size: 2rem;
+}
