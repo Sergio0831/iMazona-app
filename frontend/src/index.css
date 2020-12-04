@@ -1,14 +1,18 @@
-#root {
-  height: 100%;
-}
-
 :root {
   --bgColor: #203040;
   --white: #ffffff;
   --orange: #ff8000;
-  --grey: #c0c0c0;
+  --grey: #a4a4a4;
   --light-grey: #f8f8f8;
-  --gold: #f0c040;
+  --gold: #ffa41c;
+  --black: #404040;
+  --blue: #1c62cd;
+  --green: #20a020;
+  --red: #b12704;
+}
+
+#root {
+  height: 100%;
 }
 
 html {
@@ -30,9 +34,52 @@ h1 {
   padding: 1rem 0;
 }
 
-h1 {
+h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+button.btn {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem var(--grey) solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--light-grey);
+  cursor: pointer;
+}
+
+button.btn:hover {
+  border: 0.1rem var(--black) solid;
+}
+
+button.primary {
+  background: var(--gold);
+}
+
+button.block {
+  width: 100%;
 }
 
 /* Layout */
@@ -54,17 +101,20 @@ h1 {
   align-items: center;
 }
 
+.row.top {
+  align-items: flex-start;
+}
+
 .row.center {
   justify-content: center;
 }
 
-a {
-  text-decoration: none;
-  transition: color 0.2s ease-out;
+.col-1 {
+  flex: 1 1 25rem;
 }
 
-a:hover {
-  color: var(--orange);
+.col-2 {
+  flex: 2 1 50rem;
 }
 
 header {
@@ -107,9 +157,32 @@ img {
   border-radius: 0.5rem;
 }
 
+img.large {
+  width: 100%;
+}
+
 img.medium {
   max-width: 29rem;
   width: 100%;
+}
+
+ul.product-descr {
+  padding: 1rem;
+}
+
+@media (min-width: 519px) {
+  ul.product-descr {
+    padding: 0rem;
+  }
+}
+
+.card__title {
+  color: var(--blue);
+  transition: color 0.2s ease-out;
+}
+
+.card__title:hover {
+  color: var(--orange);
 }
 
 .rating span {
@@ -119,6 +192,11 @@ img.medium {
 
 .price {
   font-size: 2rem;
+  color: var(--red);
+}
+
+.rating span:last-child {
+  color: #007185;
 }
 
 footer {
@@ -126,4 +204,13 @@ footer {
   padding: 1rem;
   background: var(--bgColor);
   color: var(--white);
+}
+
+/* Alert */
+.success {
+  color: var(--green);
+}
+
+.error {
+  color: var(--red);
 }
