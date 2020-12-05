@@ -1,5 +1,6 @@
 import React from "react";
 import Rating from "./Rating";
+import "./Product.css";
 
 export default function Product(props) {
   const { product } = props;
@@ -16,7 +17,7 @@ export default function Product(props) {
           rating={product.rating}
           numReviews={product.numReviews}
         ></Rating>
-        <div className="price">&euro; {product.price}</div>
+        <div className="card__price">&euro; {product.price}</div>
       </div>
     </div>
   );

@@ -1,0 +1,47 @@
+.card {
+  border: 0.1rem var(--grey) solid;
+  border-radius: 0.5rem;
+  background: var(--light-grey);
+  margin: 1rem;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.card__body > * {
+  margin-bottom: 0.5rem;
+}
+
+ul.product-descr {
+  padding: 1rem;
+}
+
+@media (min-width: 519px) {
+  ul.product-descr {
+    padding: 0rem;
+  }
+}
+
+.card__title {
+  color: var(--blue);
+  transition: color 0.2s ease-out;
+}
+
+.card__title:hover {
+  color: var(--orange);
+}
+
+.rating span {
+  color: var(--gold);
+  margin: 0.1rem;
+}
+
+.rating span:last-child {
+  color: #007185;
+}
+
+.card__price {
+  font-size: 2rem;
+  color: var(--red);
+}

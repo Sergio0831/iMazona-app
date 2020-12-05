@@ -1,0 +1,32 @@
+button.btn {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem var(--grey) solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--light-grey);
+  cursor: pointer;
+}
+
+button.btn:hover {
+  border: 0.1rem var(--black) solid;
+}
+
+button.primary {
+  background: var(--gold);
+}
+
+button.block {
+  width: 100%;
+}
+
+/* Alert */
+.success {
+  color: var(--green);
+}
+
+.danger {
+  color: var(--red);
+}
