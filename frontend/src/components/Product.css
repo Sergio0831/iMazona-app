@@ -45,3 +45,15 @@ ul.product-descr {
   font-size: 2rem;
   color: var(--red);
 }
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.1) rotate(-5deg);
+}

@@ -93,6 +93,20 @@ li {
   flex: 2 1 50rem;
 }
 
+.fa-shopping-cart {
+  font-size: 2rem;
+}
+
+.badge {
+  position: absolute;
+  transform: translate(-5px, -10px);
+  background: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+}
+
 header {
   grid-area: header;
   background: var(--bgColor);
